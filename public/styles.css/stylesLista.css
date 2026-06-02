@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(29, 66, 55);
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.containerFilmes {
+    margin: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cardFilme {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border: 3px solid #9ed0b4;
+    text-align: left;
+    
+    animation: fadeInUp 0.6s ease-out both;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardFilme:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardFilme h3 {
+    margin: -15px -15px 15px -15px; 
+    padding: 15px; 
+    border-radius: 16px 16px 0 0; 
+    text-align: center;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.genero-acao {
+    border-color: #000000;
+}
+.genero-acao h3 {
+    background-color: #000000;
+    color: white;
+}
+
+.genero-comedia {
+    border-color: #ffcc00;
+}
+.genero-comedia h3 {
+    background-color: #ffcc00;
+    color: black; 
+}
+
+.genero-drama {
+    border-color: #26a503;
+}
+.genero-drama h3 {
+    background-color: #26a503;
+    color: white;
+}
+
+.genero-romance {
+    border-color: #ff0000;
+}
+.genero-romance h3 {
+    background-color: #ff0000;
+    color: white;
+}
+
+.genero-terror {
+    border-color: #cd05a8;
+}
+.genero-terror h3 {
+    background-color: #cd05a8;
+    color: white;
+}
+
+#botaoVoltar {
+    background-color: #04ea8e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+    animation: pulsarBotao 2.5s infinite;
+}
+
+#botaoVoltar:hover {
+    background-color: #03c779;
+    animation: none;
+    transform: scale(1.1);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulsarBotao {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
