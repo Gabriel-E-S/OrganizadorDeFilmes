@@ -1,25 +1,21 @@
 # Tutorial de execução
 
-Talvez seja necessário instalar a biblioteca cors com o comando:
+## Passo a Passo
+
+1. É necessário instalar as dependências  com o comando:
 
 ```bash
 npm install cors
 ```
 
-e tbm instalar o express novamente:
-```bash
-npm install -y express
-```
+2. No mysqlWorkbench, execute os dois scripts de criação de banco, tabelas e de usuario para acessar o banco.
 
-Para rodar o código, abra o index.html usando a extensão live server do vs code ou clicando no arquivo no navegador de arquivos.
-
-No terminal execute:
+3. No terminal execute:
 
 ```bash
 node index.js
 ```
-
-No mysqlWorkbench, execute os dois scripts de criação de banco, tabelas e de usuario para acessar o banco.
+4. Para rodar o código, abra o index.html usando a extensão live server do vs code ou clicando no arquivo no navegador de arquivos.
 
 # Solução de Problemas: Conectando Node.js (WSL) ao MySQL (Windows)
 
