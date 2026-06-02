@@ -42,7 +42,7 @@ function deletarFilme(id) {
     const confirmacao = confirm("Tem certeza que deseja remover este filme?");
     
     if (confirmacao) {
-        fetch(`http://localhost:3000/filmes/${id}`, {
+        fetch(`/filmes/${id}`, {
             method: 'DELETE' 
         })
         .then(resposta => {

@@ -83,7 +83,7 @@ app.post('/add-filme', (req, res) => {
         <body>
             <div class="caixa">
                 <h1> Filme salvo com sucesso!</h1>
-                <a href="http://127.0.0.1:5500/index.html" class="botao-voltar">Voltar para o Formulário</a>
+                <a href="/" class="botao-voltar">Voltar para o Formulário</a>
             </div>
         </body>
         </html>
