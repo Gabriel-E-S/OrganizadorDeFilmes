@@ -35,7 +35,7 @@ fetch('/filmes')
     })
     .catch(erro => {
         console.error('Erro ao buscar filmes:', erro);
-        document.getElementById('containerFilmes').innerHTML = '<p>Erro ao carregar as filmes.</p>';
+        document.getElementById('containerFilmes').innerHTML = '<p>Erro ao carregar os filmes.</p>';
     });
     
 function deletarFilme(id) {
